@@ -4,9 +4,17 @@ const fs = require('fs');
 const path = require('path');
 
 const app = express();
-const PORT = 5000;
+// UPDATE: Render requires process.env.PORT to assign an internet port dynamically
+const PORT = process.env.PORT || 5000;
 
-app.use(cors());
+// UPDATE: Explicitly allow your Netlify URL to communicate with this backend
+app.use(cors({
+  origin: [
+    'https://thundervault-bd.netlify.app',
+    'http://localhost:5173',
+    'http://localhost:3000'
+  ]
+}));
 app.use(express.json());
 
 const ordersPath = path.join(__dirname, 'orders.json');
@@ -81,5 +89,5 @@ ${itemsText}
 });
 
 app.listen(PORT, () => {
-    console.log(`Backend server running on http://localhost:${PORT}`);
+    console.log(`Backend server running on port ${PORT}`);
 });
