@@ -37,22 +37,15 @@ app.post('/api/orders', (req, res) => {
         const orderId = "TV-" + Date.now();
         const date = new Date().toLocaleString();
         
-        // 1. Save standard JSON for the computer
         const newOrder = {
-            orderId: orderId,
-            date: date,
-            customer: customerInfo,
-            transactionId: transactionId,
-            items: cart,
-            itemTotal: itemTotal,
-            deliveryCharge: deliveryCharge,
-            grandTotal: grandTotal
+            orderId: orderId, date: date, customer: customerInfo,
+            transactionId: transactionId, items: cart,
+            itemTotal: itemTotal, deliveryCharge: deliveryCharge, grandTotal: grandTotal
         };
         
         orders.push(newOrder);
         saveOrders(orders);
         
-        // 2. Save a beautiful, formatted text file for you to read
         let itemsText = cart.map(item => `  🛒 ${item.quantity}x ${item.name} (${item.price})`).join('\n');
         
         let humanReadableOrder = `
@@ -77,14 +70,25 @@ ${itemsText}
    
 💳 Transaction ID: ${transactionId}
 ======================================================
-
 `;
-        // Append this new block of text to the file
         fs.appendFileSync(txtLogPath, humanReadableOrder);
         
-        res.json({ success: true, message: "Order securely saved to database!" });
+        // NEW: Instantly print to Render Logs for free viewing
+        console.log(humanReadableOrder);
+        
+        res.json({ success: true, message: "Order securely saved!" });
     } else {
         res.status(400).json({ success: false, message: "Missing order details." });
+    }
+});
+
+// NEW: Create a secret, free web link to view your text file
+app.get('/admin/view-orders', (req, res) => {
+    if (fs.existsSync(txtLogPath)) {
+        res.setHeader('Content-Type', 'text/plain; charset=utf-8');
+        res.sendFile(txtLogPath);
+    } else {
+        res.send("No orders have been placed yet.");
     }
 });
 
