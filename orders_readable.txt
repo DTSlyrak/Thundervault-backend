@@ -1,0 +1,84 @@
+
+======================================================
+📦 NEW ORDER: TV-1792873594404
+📅 DATE: 10/25/2026, 2:26:34 AM
+
+👤 CUSTOMER DETAILS:
+   Name:    Sami
+   Phone:   017
+   Address: mirpur
+   Zone:    Outside Dhaka
+   Note:    None
+
+🛍️ ITEMS ORDERED:
+  🛒 5x Amazing Spiderman Andrew Garfield ($19.99)
+  🛒 1x Deadpool ($19.99)
+  🛒 1x Hulk ($19.99)
+  🛒 1x Infinity Ultron ($19.99)
+  🛒 2x Gwen Stacy ($19.99)
+  🛒 1x Green Goblin ($19.99)
+  🛒 1x Doctor Strange ($19.99)
+  🛒 1x Captain America Brave New World ($19.99)
+
+💰 BILLING:
+   Items Total:   259.87
+   Delivery:      130
+   GRAND TOTAL:   389.87
+   
+💳 Transaction ID: 12345678
+======================================================
+
+
+======================================================
+📦 NEW ORDER: TV-1792873708482
+📅 DATE: 10/25/2026, 2:28:28 AM
+
+👤 CUSTOMER DETAILS:
+   Name:    s
+   Phone:   s
+   Address: s
+   Zone:    Inside Dhaka city
+   Note:    None
+
+🛍️ ITEMS ORDERED:
+  🛒 4x Amazing Spiderman Andrew Garfield ($19.99)
+
+💰 BILLING:
+   Items Total:   79.96
+   Delivery:      70
+   GRAND TOTAL:   149.96
+   
+💳 Transaction ID: Cash on Delivery
+======================================================
+
+
+======================================================
+📦 NEW ORDER: TV-1792875589147
+📅 DATE: 10/25/2026, 2:59:49 AM
+
+👤 CUSTOMER DETAILS:
+   Name:    Sami John
+   Phone:   0177
+   Address: Rupnagar Residential Area
+   Zone:    Outside Dhaka
+   Note:    None
+
+🛍️ ITEMS ORDERED:
+  🛒 1x Amazing Spiderman Andrew Garfield (180৳)
+  🛒 1x Hulk (200৳)
+  🛒 1x Gwen Stacy (180৳)
+  🛒 1x Green Goblin (240৳)
+  🛒 1x Ironman MK 85 (200৳)
+  🛒 1x Iron Spiderman (230৳)
+  🛒 1x Sentry (240৳)
+  🛒 1x Batman Michael Keaton (240৳)
+  🛒 1x Armored Batman (250৳)
+
+💰 BILLING:
+   Items Total:   1960.00
+   Delivery:      130
+   GRAND TOTAL:   2090.00
+   
+💳 Transaction ID: 1234567890
+======================================================
+
